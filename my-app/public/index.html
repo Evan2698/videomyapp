@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+  <title>视频解析</title>
+  <meta name="keywords"
+      content="vip视频解析,vip视频在线解析,vip解析,万能vip视频解析,vip视频全能解析,vip视频,手机vip视频解析,手机在线解析vip视频,优酷vip解析,爱奇艺vip解析,腾讯vip解析,乐视vip解析,芒果vip解析">
+  <meta name="description"
+      content="VIP视频免费看，在线解析，vip视频解析，优酷vip解析，爱奇艺vip解析，腾讯vip解析，乐视vip解析，芒果vip解析方便广大用户VIP视频服务，最新电影最新电视剧在线免费观看">
+
+  <link href="/static/css/DPlayer.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/flv.js/dist/flv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/hls.js/dist/hls.min.js"></script>
+  <script src="/static/js/DPlayer.min.js"></script>
+  <script>
+    function playAction(vvurl) {
+
+      try {
+        var videoUrl = vvurl;
+        window.dp = new DPlayer({
+          container: document.getElementById('my-player'),
+          autoplay: true,
+          video: {
+            quality: [{
+              url: videoUrl,
+              type: 'auto',
+              pic: "/static/img/poster.jpg",
+            }],
+            defaultQuality: 0,
+            pic: '/static/img/poster.jpg',
+          }
+        });
+      } catch (err) {
+        console.log(err);
+      }
+    }
+  </script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-127634407-2"></script>
+  <script>function gtag() { dataLayer.push(arguments) } window.dataLayer = window.dataLayer || [], gtag("js", new Date), gtag("config", "UA-127634407-2")</script>
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+</head>
+
+<body>
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <div id="root"></div>
+  <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+</body>
+
+</html>

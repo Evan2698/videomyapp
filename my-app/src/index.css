@@ -1,0 +1,74 @@
+body {
+  font-family: "微软雅黑", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  line-height: 1.428571429;
+  color: #fff;
+  background-color: #1a1c1d
+}
+
+#jxa {
+  height: 600px;
+  padding: 5px
+}
+
+@media screen and (max-width:750px) {
+  #jxa {
+    height: 300px
+  }
+}
+
+.shadow {
+  height: 50px;
+  position: absolute;
+  left: 0;
+  top: 150px;
+  z-index: 998;
+  background-color: transparent;
+  opacity: .6;
+  text-align: center;
+  float: top;
+  font-size: 1.5em;
+  display: none
+}
+
+.shadow, .videowrap {
+  width: 100%;
+  border: none
+}
+
+.videowrap {
+  height: 100%;
+  background: #000;
+  position: relative;
+  display: flex;
+  display: -webkit-flex;
+  justify-content: center;
+  display: none;
+  margin: 5px
+}
+
+.videoframe {
+  color: #000;
+  border: none;
+  background-color: #000;
+  color: "#C8DFEA";
+  padding: 0;
+  margin: 0
+}
+
+.zoom{
+  padding: 0;
+
+}
+
+.videoeara{
+  color: black;
+  border: none;
+  background: black;
+}
+
+.jxl{
+  border:none; 
+  padding: 0px;
+}
+
